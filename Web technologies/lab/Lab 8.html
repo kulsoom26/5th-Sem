@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid p-5 bg-light">
+            <h1 class="display-5">
+                Animal History
+            </h1>
+        </div>
+    </header>
+    <section class="container-fluid mx-0 mt-2 w-100">
+        <img src="images\1.jpg" alt="" id="myImg" style="width:100%;justify-content: center;"><br>
+        <div class="carousel-caption">
+            <h3>Thumbnail label</h3>
+            <p>Thumbnail Label Here</p>
+          </div>
+          <br/>
+        <button class="btn btn-secondary" onclick="start()">
+            Play
+        </button>
+        <button class="btn btn-secondary" onclick="stop()">
+            Pause
+        </button>
+    </section>
+    <br/>
+    <script>
+        var myInterval = setInterval(slide, 1000);
+        var index = 2;
+        function slide() {
+            document.getElementById("myImg").src = "images/" + index + ".jpg";
+            if (index == 6) {
+                index = 1;
+            } else {
+                index++;
+            }
+        }
+        function stop() {
+            clearInterval(myInterval);
+        }
+        function start() {
+            myInterval = setInterval(slide, 3000)
+        }
+    </script>
+
+    <div class="container">
+        <div class="row">
+			<div class="col-12 col-md-4 order-1 order-md-1 order-lg-2">
+				<img src="images/zebra.JPG" style="width: 230px; height: 200px;">
+			</div>
+			<div class="col-12 col-md-8 order-2 order-md-2 order-lg-1">
+				<h3>Zebra</h3>
+            <p>Zebras (US: /ˈziːbrəz/, UK: /ˈzɛbrəz, ˈziː-/)[1] (subgenus Hippotigris) are African equines with distinctive black-and-white striped coats. 
+                There are three living species: the Grévy's zebra (Equus grevyi), plains zebra (E. quagga), and the mountain zebra (E. zebra). 
+                Zebras share the genus Equus with horses and asses, the three groups being the only living members of the family Equidae. 
+                Zebra stripes come in different patterns, unique to each individual. 
+                Several theories have been proposed for the function of these stripes, with most evidence supporting them as a deterrent 
+                for biting flies. Zebras inhabit eastern and southern Africa and can be found in a variety of habitats such as savannahs, 
+                grasslands, woodlands, shrublands, and mountainous areas.
+            </p>
+            <p>Zebras are primarily grazers and can subsist on lower-quality vegetation. 
+                They are preyed on mainly by lions and typically flee when threatened but also bite and kick. 
+                Zebra species differ in social behaviour, with plains and mountain zebra living in stable harems consisting of an adult male or stallion, 
+                several adult females or mares, and their young or foals; while Grévy's zebra live alone or in loosely associated herds. 
+                In harem-holding species, adult females mate only with their harem stallion, while male Grévy's zebras establish 
+                territories which attract females and the species is promiscuous. Zebras communicate with various vocalisations, 
+                body postures and facial expressions. Social grooming strengthens social bonds in plains and mountain zebras.</p>
+                <p>Zebras' dazzling stripes make them among the most recognisable mammals. 
+                    They have been featured in art and stories in Africa and beyond. 
+                    Historically, they have been highly sought after by exotic animal collectors,
+                     but unlike horses and donkeys, zebras have never been truly domesticated. 
+                     The International Union for Conservation of Nature (IUCN) lists the Grévy's zebra as endangered, 
+                     the mountain zebra as vulnerable and the plains zebra as near-threatened. The quagga, a type of plains zebra,
+                      was driven to extinction in the 19th century. Nevertheless, zebras can be found in numerous protected areas.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+			<div class="col-12 col-md-4 order-1 order-md-1 order-lg-2">
+				<img src="images/elephant200200.jpg" style="width: 230px; height: 200px;">
+			</div>
+			<div class="col-12 col-md-8 order-2 order-md-2 order-lg-1">
+				<h3>Elephant</h3>
+            <p>Elephants are the largest existing land animals. 
+                Three living species are currently recognised: the African bush elephant, the African forest elephant, 
+                and the Asian elephant. They are an informal grouping within the proboscidean family Elephantidae. 
+                Elephantidae is the only surviving family of proboscideans; extinct members include the mastodons. 
+                Elephantidae also contains several extinct groups, including the mammoths and straight-tusked elephants. 
+                African elephants have larger ears and concave backs, whereas Asian elephants have smaller ears, and convex or level backs.
+                 The distinctive features of all elephants include a long proboscis called a trunk, tusks, large ear flaps, massive legs, 
+                 and tough but sensitive skin. The trunk is used for breathing, bringing food and water to the mouth, and grasping objects.
+                  Tusks, which are derived from the incisor teeth, serve both as weapons and as tools for moving objects and digging. 
+                  The large ear flaps assist in maintaining a constant body temperature as well as in communication. 
+                  The pillar-like legs carry their great weight.
+            </p>
+            <p>Elephants are scattered throughout sub-Saharan Africa, South Asia, and Southeast Asia and are found in different habitats,
+                 including savannahs, forests, deserts, and marshes. They are herbivorous, and they stay near water when it is accessible.
+                  They are considered to be keystone species, due to their impact on their environments. Elephants have a fission–fusion 
+                  society, in which multiple family groups come together to socialise. Females (cows) tend to live in family groups,
+                   which can consist of one female with her calves or several related females with offspring. The groups, which do not
+                    include bulls, are usually led by the oldest cow, known as the matriarch.
+            </p>
+            <p>Males (bulls) leave their family groups when they reach puberty and may live alone or with other males.
+                 Adult bulls mostly interact with family groups when looking for a mate. They enter a state of increased
+                  testosterone and aggression known as musth, which helps them gain dominance over other males 
+                  as well as reproductive success. Calves are the centre of attention in their family groups and 
+                  rely on their mothers for as long as three years. Elephants can live up to 70 years in the wild.
+                   They communicate by touch, sight, smell, and sound; elephants use infrasound, and seismic communication
+                    over long distances. Elephant intelligence has been compared with that of primates and cetaceans. 
+                    They appear to have self-awareness, and appear to show empathy for dying and dead family members.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+			<div class="col-12 col-md-4 order-1 order-md-1 order-lg-2">
+				<img src="images/giraffe.jpg" style="width: 230px; height: 200px;">
+			</div>
+			<div class="col-12 col-md-8 order-2 order-md-2 order-lg-1">
+				<h3>Giraffe</h3>
+            <p>The giraffe is a tall African hoofed mammal belonging to the genus Giraffa.
+                 It is the tallest living terrestrial animal and the largest ruminant on Earth.
+                  Traditionally, giraffes were thought to be one species, Giraffa camelopardalis, with nine subspecies. 
+                  Most recently, researchers proposed dividing them into up to eight extant species due to new research into their
+                   mitochondrial and nuclear DNA, as well as morphological measurements. Seven other extinct species of Giraffa are
+                 known from the fossil record.
+            </p>
+            <p>The giraffe's chief distinguishing characteristics are its extremely long neck and legs, its horn-like ossicones, and its spotted coat patterns. It is classified under the family Giraffidae, along with its closest extant relative, the okapi. Its scattered range extends from Chad in the north to South Africa in the south, and from Niger in the west to Somalia in the east. Giraffes usually inhabit savannahs and woodlands. Their food source is leaves, fruits, and flowers of woody plants, primarily acacia species, which they browse at heights most other herbivores cannot reach.
+            </p>
+            <p>Lions, leopards, spotted hyenas, and African wild dogs may prey upon giraffes. Giraffes live in herds of related females and their offspring, or bachelor herds of unrelated adult males, but are gregarious and may gather in large aggregations. Males establish social hierarchies through "necking", combat bouts where the neck is used as a weapon. Dominant males gain mating access to females, which bear sole responsibility for raising the young.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+			<div class="col-12 col-md-4 order-1 order-md-1 order-lg-2">
+				<img src="images/leopard200200.jpg" style="width: 230px; height: 200px;">
+			</div>
+			<div class="col-12 col-md-8 order-2 order-md-2 order-lg-1">
+				<h3>leopard</h3>
+            <p>The leopard (Panthera pardus) is one of the five extant species in the genus Panthera, a member of the cat family, Felidae.[4] It occurs in a wide range in sub-Saharan Africa, in some parts of Western and Central Asia, Southern Russia, and on the Indian subcontinent to Southeast and East Asia. It is listed as Vulnerable on the IUCN Red List because leopard populations are threatened by habitat loss and fragmentation, and are declining in large parts of the global range. The leopard is considered locally extinct in Hong Kong, Singapore, South Korea, Jordan, Morocco, Togo, the United Arab Emirates, Uzbekistan, Lebanon, Mauritania, Kuwait, Syria, Libya, Tunisia and most likely in North Korea, Gambia, Laos, Lesotho, Tajikistan, Vietnam and Israel.[3] Contemporary records suggest that the leopard occurs in only 25% of its historical global range.
+            </p>
+            <p>Compared to other wild cats, the leopard has relatively short legs and a long body with a large skull. Its fur is marked with rosettes. It is similar in appearance to the jaguar (Panthera onca), but has a smaller, lighter physique, and its rosettes are generally smaller, more densely packed and without central spots. Both leopards and jaguars that are melanistic are known as black panthers. The leopard is distinguished by its well-camouflaged fur, opportunistic hunting behaviour, broad diet, strength, and its ability to adapt to a variety of habitats ranging from rainforest to steppe, including arid and montane areas. It can run at speeds of up to 58 km/h (36 mph).[7] The earliest known leopard fossils excavated in Europe are estimated 600,000 years old, dating to the late Early Pleistocene.[2] Leopard fossils were also found in Japan[8] and Sumatra.
+            </p>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>

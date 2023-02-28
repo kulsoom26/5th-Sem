@@ -1,0 +1,19 @@
+function addToCart(){
+    var id={{$id}};
+    var size = document.querySelector('input[name="size"]:checked').value;  
+    var color = document.querySelector('input[name="color"]:checked').value;
+    var quantity = document.getElementById('productQuantity').value;
+    var title = document.getElementById('titleName').innerHTML;
+    var img = document.getElementById('productImgMain').getAttribute('src');;
+    var price = {{$shoesDataArray[0][2]}};
+
+    if(localStorage[id]==null)
+{
+            localStorage.setItem(id,quantity.toString()+"|||"+color+"|||"+size+"|||"+title+"|||"+price+"|||"+img);
+            alert("Added successfully!")
+        }   
+
+else alert("Item is already added in the cart!")
+
+   
+}

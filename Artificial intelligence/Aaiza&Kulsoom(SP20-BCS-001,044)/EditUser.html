@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Cabrokies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&family=Parisienne&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+		<a class="navbar-brand" href="home.html"><img src="logo2.jpg" class="img-fluid rounded-circle"></a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cakes.html">Cakes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="brownies.html">Brownies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cookies.html">Cookies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                 style="background-color: rgb(250, 248, 248); border: 0px; color: #4C2E1D;">
+                 <i class="fa fa-user fa-2x"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="signin.html" style="color: #4C2E1D;">Sign In</a>
+                  <a class="dropdown-item" href="signup.html" style="color: #4C2E1D;">Sign Up</a>
+                  <a class="dropdown-item" href="EditUser.html" style="color: #4C2E1D;">Edit Profile</a>
+                  <a class="dropdown-item" href="Feedback.html" style="color: #4C2E1D;">Feedback</a>
+                </div>
+            </div>
+		</div>
+        <div>
+            <a href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+        </div>
+	</nav>
+    <br>
+    
+    <div class="FormContainer">
+        <center><h2>Edit Information</h2></center>
+        <br>
+        <form id="formEdit" onsubmit="var x =  checkForm(); if (x == false){return false;} else {location.href='signin.html'; return false;}">
+            <div class="form-group">
+                <i class="fas fa-user"></i>
+   				<label id="label" for="name">Name:</label><br>
+  				<input type="text" id="name" class="form-control" name="Name"placeholder="Enter your Name" required onkeyup="checkInput('name')">
+                <p><i id="nameError" class="error" style="font-size: 12px;"></i></p>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-user"></i>
+  				<label id="label" for="username">Username:</label><br>
+  				<input type="text" id="username" class="form-control" name="username"placeholder="Enter your username" required onkeyup="checkInput('username')">
+                <p><i id="usernameError" class="error" style="font-size: 12px;"></i></p>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-envelope"></i>
+  				<label id="label" for="email">Email:</label><br>
+  				<input type="email" id="email" class="form-control" name="email"placeholder="Enter your email" required onkeyup="checkInput('email')">
+                <p><i id="emailError" class="error" style="font-size: 12px;"></i></p>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+  				<label id="label" for="pwd">Password:</label><br>
+  				<input type="password" id="pwd" class="form-control" name="pwd"  placeholder="Enter your password" required onkeyup="checkInput('pwd')">
+                <p><i id="pwdError" class="error" style="font-size: 12px;"></i></p>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+  				<label id="label" for="pwd1">Confirm Password:</label><br>
+  				<input type="password" id="pwd1" class="form-control" name="pwd1" placeholder="confirm your password" required onkeyup="checkInput('pwd1')">
+                <p><i id="pwd1Error" class="error" style="font-size: 12px;"></i></p>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="condition" name="terms" value="accept">
+                <label id="label" for="condition"> I accept the Terms of Use & Privacy Policy</label>
+            </div>
+                
+
+            <button type="submit" onclick= "return checkForm()" class="btn btn-danger btn-block">Confirm Edit</button>
+            <br>
+            
+        </form>
+    </div>
+    <br>
+  <br>
+  <footer class="py-4">
+	<div class="container">
+		<div class="row mx-4 mt-4">
+			<div class="col-md-6 col-lg-5">
+				<h5 id="headingFooter">The Cabrokies</h5>
+				<p>We pride ourselves in providing the customer with the best services, and for using high quality ingredients in all of our baked goods.</p>
+			</div>
+			<div class="col-md-6 col-lg-2">
+				<h5>Links</h5>
+				<ul class="list-unstyled text-muted">
+					<li><a class="linktext" href="home.html">Home</a></li>
+					<li><a class="linktext" href="cakes.html">Cakes</a></li>
+					<li><a class="linktext" href="brownies.html">Brownies</a></li>
+					<li><a class="linktext" href="cookies.html">Cookies</a></li>
+					<li><a class="linktext" href="about.html">About Us</a></li>
+				</ul>
+			</div>
+			<div class="col-md-6 col-lg-5">
+				<h5>Contact</h5>
+				<ul class="list-unstyled text-muted">
+					<li><i class="fa fa-phone"></i> 0307809974</li>
+					<li><i class="fa fa-envelope"></i>  carbokies@gmail.com</li>
+					<li><i class="fa fa-instagram"></i>  <a class="linktext" href="https://instagram.com/thecabrokies?igshid=YmMyMTA2M2Y=">thecarbokies</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+  <script>
+		var valid = [true,true,true,true,true]
+
+		function checkInput(type){
+			var namePattern = /^[^1-9]*$/
+			var usernamePattern = /^[a-zA-Z0-9]([._-](?![._-])|[a-zA-Z0-9]){3,18}[a-zA-Z0-9]$/
+			var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[*&$!]).{8,}$/
+			var cnfrmpsdPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[*&$!]).{8,}$/
+			var emailPattern = /^([a-z0-9\.-]+)@([a-z0-9-]+)\.([a-z]{2,8})$/
+			var input = document.getElementById(type)
+			var text = document.getElementById(type+'Error')
+			var form = document.getElementById(type+'Form')
+			var value = input.value
+
+			if(type == 'name'){
+				console.log(!(namePattern.test(value)))
+				if(value=="" || !(namePattern.test(value))){
+					text.innerHTML="name should only contain letters"
+					input.classList.remove("is-valid")
+					input.classList.add("is-invalid")
+					valid[0]=false
+				}
+				else{
+					text.innerHTML=""
+					input.classList.remove("is-invalid")
+					input.classList.add("is-valid")
+					valid[0]=true
+				}
+			}
+      if(type == 'username'){
+				console.log(!(usernamePattern.test(value)))
+				if(value=="" || !(usernamePattern.test(value))){
+					text.innerHTML="username should only contain letters, numbers and _,. and -"
+					input.classList.remove("is-valid")
+					input.classList.add("is-invalid")
+					valid[1]=false
+				}
+				else{
+					text.innerHTML=""
+					input.classList.remove("is-invalid")
+					input.classList.add("is-valid")
+					valid[1]=true
+				}
+			}
+			if(type == 'email'){
+				if(emailPattern.test(value)){
+					text.innerHTML=""
+					input.classList.remove("is-invalid")
+					input.classList.add("is-valid")
+					valid[2]=true
+				}
+				else{
+					text.innerHTML="invalid email address"
+					input.classList.remove("is-valid")
+					input.classList.add("is-invalid")
+					valid[2]=false
+				}
+			}
+      if(type == 'pwd'){
+				if(passwordPattern.test(value)){
+					text.innerHTML=""
+					input.classList.remove("is-invalid")
+					input.classList.add("is-valid")
+					valid[3]=true
+				}
+				else{
+					text.innerHTML="Length should be 8 or more characters, contain a number, upper and lowercase, and *&$!"
+					input.classList.remove("is-valid")
+					input.classList.add("is-invalid")
+					valid[3]=false
+				}
+			}
+      if(type == 'pwd1'){
+				if(cnfrmpsdPattern.test(value)){
+          var pass = document.getElementById('pwd').value
+          if(pass === value){
+            text.innerHTML=""
+					  input.classList.remove("is-invalid")
+					  input.classList.add("is-valid")
+					  valid[4]=true
+          }
+          else{
+            text.innerHTML="Passwords don't match"
+					  input.classList.remove("is-valid")
+					  input.classList.add("is-invalid")
+					  valid[4]=false
+          }
+					
+				}
+				else{
+					text.innerHTML="Length should be 8 or more characters, contain a number, upper and lowercase, and *&$!"
+					input.classList.remove("is-valid")
+					input.classList.add("is-invalid")
+					valid[4]=false
+				}
+			}
+		}
+
+		function checkForm(){
+			checkInput('name')
+			checkInput('username')
+			checkInput('email')
+			checkInput('pwd')
+			checkInput('pwd1')
+			if(valid[0] && valid[1] && valid[2] && valid[3] && valid[4]){
+				
+				return true;
+			}
+			else{
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

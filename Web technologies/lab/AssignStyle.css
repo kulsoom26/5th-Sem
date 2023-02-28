@@ -1,0 +1,121 @@
+h1{
+    text-align: center;
+    padding: 10px;
+}
+.main{
+    width: 1050px;
+    height: 1100px;
+    background-color: rgb(181, 245, 181);
+    border: 2px solid black;
+}
+body{
+    margin: 0px;
+}
+p{
+    margin-left: 150px;
+}
+.tab {
+    display: inline-block;
+    margin-left: 20px;
+}
+h2{
+    margin-left: 150px;
+    background-color: green;
+    color: white;
+    top: -3px;
+    display: inline-block;
+    position: relative;
+}
+hr{
+    margin-top: -23px; 
+    width:898px; 
+    margin-left: 150px; 
+    color: black;
+    border-top: 1.5px solid black;
+}
+#image1{
+    float:right;
+    margin-top: 10px;
+}
+#image2{
+    float:right;
+    margin-top: 10px;
+    padding-left: 3px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+#baseball h2{
+    margin-left: 150px;
+    background-color: green;
+    color: white;
+    top: 78px;
+    display: inline-block;
+    position: relative;
+}
+
+aside a{
+    width: 100px;
+    background-color:rgb(255, 255, 227);
+    color: blue;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    list-style-type: none;
+    border: 2px solid yellow ;
+    position: relative;
+    top: -1070px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+#asideHeading{
+    color: black;
+    text-align: left;
+    font-size: 23px;
+    position: relative;
+    left: -105px;
+    top: -1064px;
+    background-color: rgb(181, 245, 181);
+}
+.Eventmain{
+    margin-left: -100px;
+    height: 600px;
+    width: 1050px;
+}
+.events{
+background-color: green;
+color: white;
+font-size: 25px;
+display: inline-block;
+position: relative;
+top: 10px;
+}
+#events{
+    margin-top: -11px; 
+    width: 1000px; 
+    margin-left: 150px; 
+    color: black;
+    border-top: 1.5px solid black;
+}
+.div1{
+    height: 70px;
+}
+h3{
+    text-align: left; 
+    font-size:25px;
+    top: -10px;
+}
+
+.EventAside{
+    background-color: cyan;
+    color: black;
+    display: block;
+    padding: 10px;
+    width: 120px; 
+    height:300px;
+    border: 2px solid black;
+    position:fixed;
+    top: 0px; 
+    left: 83.5%;
+}

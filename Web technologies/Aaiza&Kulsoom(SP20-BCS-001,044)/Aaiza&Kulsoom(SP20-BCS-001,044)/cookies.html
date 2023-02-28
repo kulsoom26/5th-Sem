@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cookies- The Cabrokies</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&family=Parisienne&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+		<a class="navbar-brand" href="home.html"><img src="logo2.jpg" class="img-fluid rounded-circle"></a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cakes.html">Cakes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="brownies.html">Brownies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cookies.html">Cookies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                 style="background-color: rgb(250, 248, 248); border: 0px; color: #4C2E1D;">
+                 <i class="fa fa-user fa-2x"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="signin.html" style="color: #4C2E1D;">Sign In</a>
+                  <a class="dropdown-item" href="signup.html" style="color: #4C2E1D;">Sign Up</a>
+                  <a class="dropdown-item" href="EditUser.html" style="color: #4C2E1D;">Edit Profile</a>
+                  <a class="dropdown-item" href="Feedback.html" style="color: #4C2E1D;">Feedback</a>
+                </div>
+            </div>
+		</div>
+        <div>
+            <a href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+        </div>
+	</nav>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="jumbotron-background">
+            <img src="Cookiesj.jpg" style="width:1230px; height: 600px;">
+        </div>
+        <div class="container text-white">
+            <h1 class="display-4" style="color: #4a2c1b;">COOKIES</h1>
+            <p class="lead" style="color:  #E5CDBF;">From popular Chocolate Chip Cookies and Sugar Cookies to flavorful Dark Chocolate Chunk Cookies and Butter Cookies, you'll find hundreds of unique cookies to browse.</p>
+        </div>
+    </div>
+    <div class="col-12" style="background-color: white;">
+        <ul class="breadcrumb" style="background-color: #D9CDBC;">
+            <li class="breadcrumb-item"><a href="home.html" style="color: #4C2E1D;">Home</a></li>
+            <li class="breadcrumb-item"><a href="menu.html" style="color: #4C2E1D;">Menu</a></li>
+            <li class="breadcrumb-item active" style="color: #a3623c;">Cookies</li>
+        </ul>
+    </div>
+    <h2 style="margin-left: 20px;">Cookies</h2>
+    <div class="row mx-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="ChocolateChipCookies.html">
+            <div class="container mt-3" id="container">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="chocoChip" src="chip.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('chocolatechip1')" onmouseout="changeImage('chocolatechip2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Chocolate Chip Cookies</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Chocolate Chip Cookies are soft, chewy, and irresistibly delicious! buttery, slightly doughy, & so good. With no weird ingredients or chilling!</p>
+                        <p class="card-text">Rs 599</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="TripleChocolateChipCookies.html">
+            <div class="container mt-3" id="container">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="tripleChip" src="tripple.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('tripleChip1')" onmouseout="changeImage('tripleChip2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Triple Chocolate Chip Cookies</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Triple Chocolate Chip Cookies have a chewy chocolate cookie base and are stuffed with milk chocolate, semi-sweet, and white chocolate chips!</p>
+                        <p class="card-text">Rs 699</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="BrownButterChocolateChipCookies.html">
+            <div class="container mt-3" id="container">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="butterCookie" src="butter.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('butterCookie1')" onmouseout="changeImage('butterCookie2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Brown Butter Chocolate Chip Cookies</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Brown Butter Chocolate Chip Cookies with oat flour are an entirely new level of chocolate chip cookie!</p>
+                        <p class="card-text">Rs 699</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+    </div>
+    <div class="row mx-4" style="margin-top: 15px;">
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="m&mCookies.html">
+            <div class="container mt-3" id="container">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="m&m" src="m&mcookies.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('m&m1')" onmouseout="changeImage('m&m2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">M&M Cookies</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">These delicious soft and chewy M&M cookies have gooey chocolate, crisp edges and cheery pops of color. M&M Chocolate Chip Cookies. The favorite chocolate candies add color and fun.</p>
+                        <p class="card-text">Rs 699</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                 <a href="WhiteChipCookies.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="whiteCookie" src="whitecookies.jfif" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('white1')" onmouseout="changeImage('white2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">White Chip Cookies</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Perfect White Chocolate Chip Cookies. Crisp on the edges, gooey in the centre, these chewy cookies are packed with white chocolate chips. </p>
+                        <p class="card-text">Rs 599</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                 <a href="DarkChocolateChunkCookies.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="dark" src="darkcookies.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('dark1')" onmouseout="changeImage('dark2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Dark Chocolate Chunk Cookies</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Big chunks of Ghiradelli dark chocolate surrounded by the perfect cookie. You won't be able to resist them.</p>
+                        <p class="card-text">Rs 699</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-4" style="margin-top: 15px;">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                 <a href="SkilletCookie.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="skillet" src="skillet.jfif" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('skillet1')" onmouseout="changeImage('skillet2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Skillet Cookie</h5>
+                        <p class="card-text" style="font-size: 15px;">1 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">One big, thick warm chocolate chip cookie. This ooey gooey cookie pizookie recipe will have you begging for seconds!</p>
+                        <p class="card-text">Rs 999</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                 <a href="MintCookies.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="mint" src="mintcookie.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('mint1')" onmouseout="changeImage('mint2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Mint Cookie</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">They’re everything you love about mint chip ice cream in a melt-in-your-mouth cookie! They’re soft and chewy in the center with barely crispy edges!</p>
+                        <p class="card-text">Rs 799</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                 <a href="ChunkyCookies.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="chunk" src="chunky.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('chunk1')" onmouseout="changeImage('chunk2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Chunky Cookies</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Tender, puffy, and fudgy with perfectly crisp edges — these chocolate chunk cookies taste better than Toll House and are more reliable.</p>
+                        <p class="card-text">Rs 899</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer class="py-4">
+        <div class="container">
+            <div class="row mx-4 mt-4">
+                <div class="col-md-6 col-lg-5">
+                    <h5 id="headingFooter">The Cabrokies</h5>
+                    <p>We pride ourselves in providing the customer with the best services, and for using high quality ingredients in all of our baked goods.</p>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a class="linktext" href="home.html">Home</a></li>
+                        <li><a class="linktext" href="cakes.html">Cakes</a></li>
+                        <li><a class="linktext" href="brownies.html">Brownies</a></li>
+                        <li><a class="linktext" href="cookies.html">Cookies</a></li>
+                        <li><a class="linktext" href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="fa fa-phone"></i> 0307809974</li>
+                        <li><i class="fa fa-envelope"></i>  carbokies@gmail.com</li>
+                        <li><i class="fa fa-instagram"></i>  <a class="linktext" href="https://instagram.com/thecabrokies?igshid=YmMyMTA2M2Y=">thecarbokies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function changeImage(type){
+            if (type=="chocolatechip1"){
+                var img = document.getElementById('chocoChip')
+                img.setAttribute('src','chip2.jfif')
+            }
+            if (type=="chocolatechip2"){
+                var img = document.getElementById('chocoChip')
+                console.log("what")
+                img.setAttribute('src','chip.jpg')
+            }
+            if (type=="tripleChip1"){
+                var img = document.getElementById('tripleChip')
+                img.setAttribute('src','triple.jfif')
+            }
+            if (type=="tripleChip2"){
+                var img = document.getElementById('tripleChip')
+                console.log("what")
+                img.setAttribute('src','tripple.jpg')
+            }
+            if (type=="butterCookie1"){
+                var img = document.getElementById('butterCookie')
+                img.setAttribute('src','butter.jfif')
+            }
+            if (type=="butterCookie2"){
+                var img = document.getElementById('butterCookie')
+                console.log("what")
+                img.setAttribute('src','butter.jpg')
+            }
+            if (type=="m&m1"){
+                var img = document.getElementById('m&m')
+                img.setAttribute('src','m&m.jfif')
+            }
+            if (type=="m&m2"){
+                var img = document.getElementById('m&m')
+                console.log("what")
+                img.setAttribute('src','m&mcookies.jpg')
+            }
+            if (type=="white1"){
+                var img = document.getElementById('whiteCookie')
+                img.setAttribute('src','whitechip.jpg')
+            }
+            if (type=="white2"){
+                var img = document.getElementById('whiteCookie')
+                console.log("what")
+                img.setAttribute('src','whitecookies.jfif')
+            }
+            if (type=="dark1"){
+                var img = document.getElementById('dark')
+                img.setAttribute('src','dark.jfif')
+            }
+            if (type=="dark2"){
+                var img = document.getElementById('dark')
+                console.log("what")
+                img.setAttribute('src','darkcookies.jpg')
+            }
+            if (type=="skillet1"){
+                var img = document.getElementById('skillet')
+                img.setAttribute('src','skilletCookie.jpg')
+            }
+            if (type=="skillet2"){
+                var img = document.getElementById('skillet')
+                console.log("what")
+                img.setAttribute('src','skillet.jfif')
+            }
+            if (type=="mint1"){
+                var img = document.getElementById('mint')
+                img.setAttribute('src','mint.jfif')
+            }
+            if (type=="mint2"){
+                var img = document.getElementById('mint')
+                console.log("what")
+                img.setAttribute('src','mintcookie.jpg')
+            }
+            if (type=="chunk1"){
+                var img = document.getElementById('chunk')
+                img.setAttribute('src','chunk.jpg')
+            }
+            if (type=="chunk2"){
+                var img = document.getElementById('chunk')
+                console.log("what")
+                img.setAttribute('src','chunky.jpg')
+            }
+
+        }
+    </script>
+</body>
+</html>

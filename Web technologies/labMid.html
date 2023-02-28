@@ -1,0 +1,177 @@
+ <!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>MidTerm</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .row{
+            width: 100%;
+            margin-top: 120px;
+            margin-left: 70px;
+        }
+        #col1{
+            border: solid black 1.5px;
+            height: 330px;
+            margin-right: 80px;
+            background-color: white;
+        }
+        .first1,.first2{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .btn1{
+            margin-left: 100px;
+            background-color: black;
+            color: white;
+            width:70px;
+        }
+
+        #col2{
+            border: solid black 1.5px;
+            border-radius: 15px;
+            height: 330px;
+            margin-right: 80px;
+            background-color: white;
+        }
+        .sec1,.sec2{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .btn2{
+            margin-left: 15px;
+            background-color: black;
+            color: white;
+            width:70px;
+        }
+        #col3{
+            border: solid black 1.5px;
+            border-radius: 2px;
+            margin-right: 80px;
+            width: 250px;
+            background-color: white;
+        }
+        .th1,.th2{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .btn3{
+            margin-left: 100px;
+            background-color: black;
+            color: white;
+            width:70px;
+        }
+    </style>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("user").value;
+            var radios = document.getElementsByName('Gender');
+            for (var radio of radios)
+            {
+                if (radio.checked) {
+                    alert("Username: "+x+". Gender: "+radio.value);
+            }
+            
+        }
+        }
+        function myFunc(){
+            var x = document.getElementById("usern").value;
+            var y = document.getElementById("comment").value;
+            alert("Username: "+x+". Comment: "+y);
+        }
+        function myFunct(){
+            var x = document.getElementById("title").value;
+            var y = document.getElementById("rep").value;
+            alert("Username: "+x+". Comment: "+y);
+        }
+    </script>
+</head>
+<body>
+    <div class="row">
+        <div class=".col-lg-4 " id="col1">
+            <form>
+                <h4 style="text-align:center; margin-top: 10px; margin-bottom: 25px;">Registration</h4>
+                <div class="first1">
+                    <lable for="un">Username: *</lable><br><br>
+                    <input type="text" id="user" name="un" required><br><br>
+                </div>
+                <div class="first2">
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="Gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="fmale" name="Gender" value="Female">
+                    <label for="fmale">Female</label><br><br>
+                </div>
+                <div>
+                    <button class="btn1" onclick="myFunction()">Submit</button>
+                </div>
+            </form>
+            <div style="margin-top: 50px;margin-right: 100px;">
+                <center>
+                    <h5 style="color: white;">REGISTRATION FORM</h5>
+                    <p style="color: white;">Metro theme demo</p>
+                </center>
+            </div>
+        </div>
+
+        <div class=".col-lg-4 " id="col2">
+            <form style="width: 300px;">
+                <h4 style="margin-top: 10px; margin-left: 8px; margin-bottom: 25px;">Comment form</h4>
+                <div class="sec1">
+                    <lable for="un">Username: *</lable><br><br>
+                    <input type="text" id="usern" name="un" required><br><br>
+                </div>
+                <div class="sec2">
+                    <p>Comment: *</p>
+                    <textarea id="comment"></textarea><br>
+                </div>
+                <div>
+                    <button class="btn2" onclick="myFunc()">Submit</button>
+                </div>
+            </form>
+            <div style="margin-top: 50px;margin-left: 80px;">
+                <h5 style="color: white; margin-left: -40px;">COMMENT FORM</h5>
+                <p style="color: white; margin-left: -40px;">Bootstrap theme demo</p>
+            </div>
+        </div>
+
+        <div class=".col-lg-4 " id="col3">
+            <form>
+                <div style="background-color: grey; height: 70px; width: 247px; margin-top: -10px;">
+                    <h3 style="margin-top: 10px; margin-left: 40px; margin-bottom: 25px; color:white"><strong>Bug Report</strong></h3>
+                </div>
+                <div class="th1">
+                    <lable for="title">Title: *</lable><br><br>
+                    <input type="text" id="title" name="title" required><br><br>
+                </div>
+                <div class="th2">
+                    <p>Severity: *</p>
+                    <select id="rep">
+                        <option value="critical">critical</option>
+                        <option value="minor">minor</option>
+                        <option value="major">major</option>
+                    </select><br><br><br>
+                </div>
+                <div>
+                    <button class="btn3" onclick="myFunct()">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div style=" margin-top: 20px;margin-left: 650px;">
+        <center>
+            <h5 style="color: white;">BUG REPORT</h5>
+            <p style="color: white;">Flat theme demo</p>
+        </center>
+    </div>
+</body>
+</html>

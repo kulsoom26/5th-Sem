@@ -1,0 +1,28 @@
+public function order(){
+        if(Session::has('privilege') && Session::get('privilege') == 'user'){
+            $userID=Session::get('id');
+            if(isset($_COOKIE['len'])) {
+                $len = $_COOKIE['len'];
+            }
+            for($i=0;$i<$len;$i++){
+                if(isset($_COOKIE["{$i}"])) {
+                    $arr = explode("|||",$_COOKIE["{$i}"]);
+                    DB::insert("INSERT INTO checkouts (product_id, userId,  price,	no_of_items,color,size) VALUES (?,?,?,?,?,?)", 
+                    [
+                        $userID,
+                        $arr[0],
+                        $arr[5] , 
+                        $arr[1],
+                        $arr[2] ,
+                        $arr[3] 
+                        
+                    ]
+                );
+                }    
+            }   
+            return redirect('/cart');
+        }
+        else return redirect('/login');
+        
+
+    }

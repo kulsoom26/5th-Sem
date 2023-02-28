@@ -1,0 +1,192 @@
+<HTML>
+
+    <HEAD>
+    <TITLE>Job Survey Form</TITLE>
+    <style>
+    #news{position:relative;}
+    </style>
+    </HEAD>
+    <BODY>
+    <H1><CENTER>Job Survey Form</CENTER></H1>
+    
+    <HR>
+    <p id="news">Job Openings at <a href="https://www.rozee.pk/">https://www.rozee.pk/</a> and 
+    <a href="http://www.jobs.ac.uk/">http://www.jobs.ac.uk/</a></p>
+    <HR>
+    
+    <P>
+    The purpose of the survey is to evaluate job satisfaction of the CIIT employees. 
+    It should take less than 10 minutes to complete this survey.
+    </P>
+    
+    <FORM method=post action="" name="form">
+    
+    <H3>Please tell us a little about yourself. </H3>
+    
+    <P id="gen" style="display: inline-block;">
+    Gender: <INPUT TYPE="RADIO" NAME="gender" VALUE="Male" required>Male 
+            <INPUT TYPE="RADIO" NAME="gender" VALUE="Female">Female
+                <p style="display: inline-block; margin-left: 10px;">Option selected: <span id="gender"></span> </p>
+    </P>
+    <P style="display: inline-block;">
+    Date of birth: Month <SELECT NAME="mob" required>
+    <OPTION SELECTED VALUE="final" id="sel1"> ? 
+    <OPTION VALUE="Jan">Jan
+    <OPTION VALUE="Feb">Feb
+    <OPTION VALUE="March">Mar
+    <OPTION VALUE="April">Apr
+    <OPTION VALUE="May">May
+    <OPTION VALUE="June">Jun
+    <OPTION VALUE="July">Jul
+    <OPTION VALUE="August">Aug
+    <OPTION VALUE="September">Sep
+    <OPTION VALUE="October">Oct
+    <OPTION VALUE="November">Nov
+    <OPTION VALUE="December">Dec</SELECT>     
+    Day 
+    <SELECT id="dob" required>
+    <OPTION SELECTED VALUE="" id="sel2">?
+    <OPTION>1
+    <OPTION>2
+    <OPTION>3
+    <OPTION>4
+    <OPTION>5
+    <OPTION>6
+    <OPTION>7
+    <OPTION>8
+    <OPTION>9
+    <OPTION>10
+    <OPTION>11
+    <OPTION>12
+    <OPTION>13
+    <OPTION>14
+    <OPTION>15
+    <OPTION>16
+    <OPTION>17
+    <OPTION>18
+    <OPTION>19
+    <OPTION>20
+    <OPTION>21
+    <OPTION>22
+    <OPTION>23
+    <OPTION>24
+    <OPTION>25
+    <OPTION>26
+    <OPTION>27
+    <OPTION>28
+    <OPTION>29
+    <OPTION>30
+    <OPTION>31 
+    </SELECT>     
+    Year 
+    <SELECT NAME="yob" required>
+    <OPTION SELECTED VALUE="" id="sel3"> ??
+    <OPTION>1965
+    <OPTION>1966
+    <OPTION>1967
+    <OPTION>1968
+    <OPTION>1969
+    <OPTION>1970
+    <OPTION>1971
+    <OPTION>1972
+    <OPTION>1973
+    <OPTION>1974
+    <OPTION>1975
+    <OPTION>1976
+    <OPTION>1977
+    <OPTION>1978
+    <OPTION>1979
+    <OPTION>1980</SELECT>
+        <p style="display: inline-block; margin-left: 10px;">Option selected: <span id="month"></span> <span id="day"></span>, <span id="year"></span> </p>
+    </P>
+    <P>
+    Highest degree attained: <SELECT NAME="educ" required>
+    <OPTION SELECTED VALUE="" id="sel4"> ?
+    <OPTION VALUE="H.S. diploma (or equiv.)">H.S. diploma (or equiv.)
+    <OPTION VALUE="Assoc. degree">Assoc. degree
+    <OPTION VALUE="3">Bachelor's degree
+    <OPTION VALUE="4">Master's degree
+    <OPTION VALUE="5">Doctoral degree</SELECT>    
+    </P>
+    <HR>
+    
+    <H3>The following series of questions ask about your feelings
+    toward your work. Select the answer that is true most of the time.
+    </H3>
+    
+    
+    <TABLE>
+    
+    <TR ALIGN=CENTER>
+    <TD WIDTH=75> </TD>
+    <TD WIDTH=75><B>Strongly<br>agree</B></TD>
+    <TD WIDTH=75><B>Agree</B></TD>
+    <TD WIDTH=75><B>Neither<br>agree<br>nor<br>disagree</B></TD>
+    <TD WIDTH=75><B>Disagree</B></TD>
+    <TD WIDTH=75><B>Strongly<br>disagree</B></TD>
+    </TR>
+    
+    <TR ALIGN=CENTER id="sti">
+    <TD  ALIGN=LEFT>The work is very stimulating.</TD>
+    <TD><INPUT TYPE="RADIO" NAME="stimulat" VALUE="Strongly agree" required></TD>
+    <TD><INPUT TYPE="RADIO" NAME="stimulat" VALUE="Agree"></TD>
+    <TD><INPUT TYPE="RADIO" NAME="stimulat" VALUE="Neither"></TD>
+    <TD><INPUT TYPE="RADIO" NAME="stimulat" VALUE="Disagree"></TD>
+    <TD><INPUT TYPE="RADIO" NAME="stimulat" VALUE="Strongly disagree"></TD>
+    </TR>
+    
+    <TR ALIGN=CENTER id="free">
+    <TD  ALIGN=LEFT>I have a lot of freedom at work.</TD>
+    <TD><INPUT TYPE="RADIO" NAME="freedom" VALUE="Strongly agree" required></TD>
+    <TD><INPUT TYPE="RADIO" NAME="freedom" VALUE="Agree"></TD>
+    <TD><INPUT TYPE="RADIO" NAME="freedom" VALUE="Neither"></TD>
+    <TD><INPUT TYPE="RADIO" NAME="freedom" VALUE="Disagree"></TD>
+    <TD><INPUT TYPE="RADIO" NAME="freedom" VALUE="Strongly disagree"></TD>
+    </TR>
+    
+    <TR ALIGN=CENTER id="cre">
+    <TD  ALIGN=LEFT>The work environment is conducive to creative thinking.</TD>
+    <TD><INPUT TYPE="RADIO" NAME="creative" VALUE="Strongly agree" required></TD>
+    <TD><INPUT TYPE="RADIO" NAME="creative" VALUE="Agree"></TD>
+    <TD><INPUT TYPE="RADIO" NAME="creative" VALUE="Neither"></TD>
+    <TD><INPUT TYPE="RADIO" NAME="creative" VALUE="Disagree"></TD>
+    <TD><INPUT TYPE="RADIO" NAME="creative" VALUE="Strongly disagree"></TD>
+    </TR>
+    
+    </TABLE>
+    
+    <HR>
+    
+    <BR>
+    If you would like to have a copy of the final summary results sent to you, 
+    please type your e-mail address below:
+    <BR>
+    E-mail address: <INPUT TYPE="email" NAME="email" SIZE=40 MAXLENGTH=80 id="emaill" required>
+    <BR>
+    <BR>
+    Thank you for taking the survey.  To submit the results, press the 
+    <B>Send info</B> button below.
+    <BR>
+    <BR>
+     
+    <input type=button VALUE="Send info" id="send" onclick="sendinf();return false"> <input type=reset VALUE="Clear values">
+    <HR>
+    
+    </FORM>
+    
+    <script>
+        function sendinf(){
+            var radios = document.getElementsByName('gender');
+            for (var radio of radios){
+                if (radio.checked) {
+                    document.getElementById("gender").innerHTML = radio.value;
+                }
+            }
+
+            document.getElementById("month").innerHTML = document.form.mob.value;
+            document.getElementById("day").innerHTML = document.form.dob.text;
+            document.getElementById("year").innerHTML = document.form.dob.text;
+        }
+    </script>
+    </BODY>
+    </HTML>

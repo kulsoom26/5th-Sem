@@ -1,0 +1,91 @@
+*{
+	font-family: 'sans-serif';
+	color: #7A583E;
+	font-size: 20px;
+}
+
+h2,h3,h4,h5{
+	font-family: 'Playfair Display', serif;
+	color: #4C2E1D;
+	font-weight: 50; 
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0 0 70px 0;
+   	overflow-x: hidden; 
+   	margin-bottom: 0;
+   	padding-bottom: 0;
+}
+
+a{
+	text-decoration: none!important;
+}
+
+.error{
+	color: #9B3737;
+}
+
+#title{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+    margin-top: 10px;
+    margin-left: 5px;
+
+}
+
+#admintitle{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 0px;
+}
+
+.brandname1{
+	font-family: 'Parisienne', cursive;
+	font-size: 50px;
+}
+
+.brandname2{
+	font-family: 'Gothic A1', sans-serif;
+	font-size: 75px;
+	font-weight: 200;
+}
+
+[class*="fa"]{
+	color: #4C2E1D;
+	margin-right: 5px;
+}
+
+#side{
+    background-color: #c72727;
+    padding-bottom: 100%;
+    padding-left: 0px;
+    padding-right: 1px;
+}
+
+.sidebar{
+    text-decoration: none!important;
+    display: block;
+    padding: 30px;
+    font-size: 20px;
+    border: 3px solid #d84949;
+    color: #ffffff;
+    font-family:sans-serif;
+}
+
+#active{
+    font-weight: 200;
+    background-color: #b31414;
+}
+
+.sidebar:hover{
+    background-color: #971e1e;
+    color: #ffffff;
+    border: 4px solid #d84949;
+}
+

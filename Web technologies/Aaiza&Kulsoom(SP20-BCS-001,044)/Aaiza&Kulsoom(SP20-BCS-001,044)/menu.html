@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu- The Cabrokies</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&family=Parisienne&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+		<a class="navbar-brand" href="home.html"><img src="logo2.jpg" class="img-fluid rounded-circle"></a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cakes.html">Cakes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="brownies.html">Brownies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cookies.html">Cookies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                 style="background-color: rgb(250, 248, 248); border: 0px; color: #4C2E1D;">
+                 <i class="fa fa-user fa-2x"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="signin.html" style="color: #4C2E1D;">Sign In</a>
+                  <a class="dropdown-item" href="signup.html" style="color: #4C2E1D;">Sign Up</a>
+                  <a class="dropdown-item" href="EditUser.html" style="color: #4C2E1D;">Edit Profile</a>
+                  <a class="dropdown-item" href="Feedback.html" style="color: #4C2E1D;">Feedback</a>
+                </div>
+            </div>
+		</div>
+        <div>
+            <a href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+        </div>
+	</nav>
+    
+    <section class="container-fluid mx-0 mt-2 w-100">
+        <img class="img-fluid" src="menuCarousel/image1.jpg" alt="" id="myImg" style="width:1230px; height: 500px;"><br>
+        <div class="carousel-caption" style="margin-left: 0px;">
+            <a href="cakes.html"><h3 id="heading"></h3></a>
+            <p id="info" style="background-color: white;"></p>
+        </div>
+        <br/>
+    </section>
+    <script>
+        var index = 1;
+        var myInterval = setInterval(slide, 3000);
+        function slide() {
+            document.getElementById("myImg").src = "menuCarousel/image" + index + ".jpg";
+            if (index == 1){
+                document.getElementById("heading").innerHTML = "CAKES";
+                document.getElementById("info").innerHTML = "There is no celebration withou a cake. This section range from White Cake and Fudge Cake to Honey Cakes. It also includes customers favorite Vanilla Cake, Chocolate Cake, Pound Cake, one layer cakes, and much more.";
+            }
+            else if (index ==2){
+                document.getElementById("heading").innerHTML = "BROWNIES";
+                document.getElementById("info").innerHTML = "The following treats certainly raise the bar for any dessert you’ve ever tasted. This section range from indulgent over-the-top Oreo Brownies to simple Fudge Brownies.";
+            }
+            else{
+                document.getElementById("heading").innerHTML = "COOKIES";
+                document.getElementById("info").innerHTML = "From popular Chocolate Chip Cookies and Sugar Cookies to flavorful Dark Chocolate Chunk Cookies and Butter Cookies, you'll find hundreds of unique cookies to browse.";
+            }
+            if (index == 3) {
+                index = 1;
+            } else {
+                index++;
+            }
+        }
+    </script>
+
+    <div class="col-12" style="background-color: white;">
+        <ul class="breadcrumb" style="background-color: #D9CDBC;">
+            <li class="breadcrumb-item"><a href="home.html" style="color: #4C2E1D;">Home</a></li>
+            <li class="breadcrumb-item active" style="color: #a3623c;">Menu</li>
+        </ul>
+    </div>
+    <h2 style="margin-left: 20px;">Top-Selling Cakes</h2>
+    <div class="row mx-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="honeycake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="honey" src="honeycake.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('honey1')" onmouseout="changeImage('honey2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Honey Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">8 layers of soft, Caramelized honey cakes sandwiched between whipped cream!</p>
+                        <p class="card-text">Rs 1,500</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="LotusCake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="lotus" src="lotuscake.png" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('lotus1')" onmouseout="changeImage('lotus2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Lotus Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">Lotus biscoff spread with cream cheese on a vanilla sponge and crushed lotus biscuits on top</p>
+                        <p class="card-text">Rs 1,899</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="FerreroCake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="ferrero" src="ferrero.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('ferrero1')" onmouseout="changeImage('ferrero2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Ferrero Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">Made from ferrero hazelnut chocolate & roasted nuts with ferrero rochers on the top!</p>
+                        <p class="card-text">Rs 1,999</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <center><a href="cakes.html"><button type="button" class="btn btn-outline-danger" id="more">More...</button></a></center>
+
+    <!--top selling brownies-->
+    <h2 style="margin-left: 20px;">Top-Selling Brownies</h2>
+    <div class="row mx-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="OreoBrownies.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="oreo" src="oreo.jfif" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('oreo1')" onmouseout="changeImage('oreo2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Oreo Brownies</h5>
+                        <p class="card-text" style="font-size: 15px;">1 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Four equally indulgent layers including brownies, Oreos cookies buttercream frosting, and chocolate ganache.</p>
+                        <p class="card-text">Rs 150</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="NutellaBrownies.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="nutella" src="nutella.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('nutella1')" onmouseout="changeImage('nutella2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Nutella Brownies</h5>
+                        <p class="card-text" style="font-size: 15px;">1 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Nutella Brownies that are packed with Nutella and melty chocolate chips, making each bite bursting with Nutella flavor and wonderfully fudgy. </p>
+                        <p class="card-text">Rs 150</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="FudgyBrownies.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="fudge" src="fudgy.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('fudge1')" onmouseout="changeImage('fudge2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Fudgy Brownies</h5>
+                        <p class="card-text" style="font-size: 15px;">1 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Rich and Fudgy from the middle. Super moist brownies. Melted dark chocolate adds more into the flavor! Topped with chocolate ganache</p>
+                        <p class="card-text">Rs 150</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+    </div>
+    <center><a href="brownies.html"><button type="button" class="btn btn-outline-danger" id="more">More...</button></a></center>
+
+    <!--top selling cookies-->
+    <h2 style="margin-left: 20px;">Top-Selling Cookies</h2>
+    <div class="row mx-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="ChocolateChipCookies.html">
+            <div class="container mt-3" id="container">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="chocoChip" src="chip.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('chocolatechip1')" onmouseout="changeImage('chocolatechip2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Chocolate Chip Cookies</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Chocolate Chip Cookies are soft, chewy, and irresistibly delicious! buttery, slightly doughy, & so good. With no weird ingredients or chilling!</p>
+                        <p class="card-text">Rs 599</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="TripleChocolateChipCookies.html">
+            <div class="container mt-3" id="container">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="tripleChip" src="tripple.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('tripleChip1')" onmouseout="changeImage('tripleChip2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Triple Chocolate Chip Cookies</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Triple Chocolate Chip Cookies have a chewy chocolate cookie base and are stuffed with milk chocolate, semi-sweet, and white chocolate chips!</p>
+                        <p class="card-text">Rs 699</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="BrownButterChocolateChipCookies.html">
+            <div class="container mt-3" id="container">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="butterCookie" src="butter.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('butterCookie1')" onmouseout="changeImage('butterCookie2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Brown Butter Chocolate Chip Cookies</h5>
+                        <p class="card-text" style="font-size: 15px;">6 pc</p>
+                        <p class="card-text" style="font-size: 15px;">Brown Butter Chocolate Chip Cookies with oat flour are an entirely new level of chocolate chip cookie!</p>
+                        <p class="card-text">Rs 699</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+    </div>
+    <center><a href="cookies.html"><button type="button" class="btn btn-outline-danger" id="more">More...</button></a></center>
+    <br>
+    <br>
+    <footer class="py-4">
+        <div class="container">
+            <div class="row mx-4 mt-4">
+                <div class="col-md-6 col-lg-5">
+                    <h5 id="headingFooter">The Cabrokies</h5>
+                    <p>We pride ourselves in providing the customer with the best services, and for using high quality ingredients in all of our baked goods.</p>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a class="linktext" href="home.html">Home</a></li>
+                        <li><a class="linktext" href="cakes.html">Cakes</a></li>
+                        <li><a class="linktext" href="brownies.html">Brownies</a></li>
+                        <li><a class="linktext" href="cookies.html">Cookies</a></li>
+                        <li><a class="linktext" href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="fa fa-phone"></i> 0307809974</li>
+                        <li><i class="fa fa-envelope"></i>  carbokies@gmail.com</li>
+                        <li><i class="fa fa-instagram"></i>  <a class="linktext" href="https://instagram.com/thecabrokies?igshid=YmMyMTA2M2Y=">thecarbokies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function changeImage(type){
+            if (type=="honey1"){
+                var img = document.getElementById('honey')
+                img.setAttribute('src','honey.jfif')
+            }
+            if (type=="honey2"){
+                var img = document.getElementById('honey')
+                console.log("what")
+                img.setAttribute('src','honeycake.jpg')
+            }
+            if (type=="lotus1"){
+                var img = document.getElementById('lotus')
+                img.setAttribute('src','lotus.jfif')
+            }
+            if (type=="lotus2"){
+                var img = document.getElementById('lotus')
+                console.log("what")
+                img.setAttribute('src','lotuscake.png')
+            }
+            if (type=="ferrero1"){
+                var img = document.getElementById('ferrero')
+                img.setAttribute('src','ferrero.jfif')
+            }
+            if (type=="ferrero2"){
+                var img = document.getElementById('ferrero')
+                console.log("what")
+                img.setAttribute('src','ferrero.jpg')
+            }
+            if (type=="oreo1"){
+                var img = document.getElementById('oreo')
+                img.setAttribute('src','oreo1.jfif')
+            }
+            if (type=="oreo2"){
+                var img = document.getElementById('oreo')
+                console.log("what")
+                img.setAttribute('src','oreo.jfif')
+            }
+            if (type=="nutella1"){
+                var img = document.getElementById('nutella')
+                img.setAttribute('src','nutella.webp')
+            }
+            if (type=="nutella2"){
+                var img = document.getElementById('nutella')
+                console.log("what")
+                img.setAttribute('src','nutella.jpg')
+            }
+            if (type=="fudge1"){
+                var img = document.getElementById('fudge')
+                img.setAttribute('src','fudge.jfif')
+            }
+            if (type=="fudge2"){
+                var img = document.getElementById('fudge')
+                console.log("what")
+                img.setAttribute('src','fudgy.jpg')
+            }
+            if (type=="chocolatechip1"){
+                var img = document.getElementById('chocoChip')
+                img.setAttribute('src','chip2.jfif')
+            }
+            if (type=="chocolatechip2"){
+                var img = document.getElementById('chocoChip')
+                console.log("what")
+                img.setAttribute('src','chip.jpg')
+            }
+            if (type=="tripleChip1"){
+                var img = document.getElementById('tripleChip')
+                img.setAttribute('src','triple.jfif')
+            }
+            if (type=="tripleChip2"){
+                var img = document.getElementById('tripleChip')
+                console.log("what")
+                img.setAttribute('src','tripple.jpg')
+            }
+            if (type=="butterCookie1"){
+                var img = document.getElementById('butterCookie')
+                img.setAttribute('src','butter.jfif')
+            }
+            if (type=="butterCookie2"){
+                var img = document.getElementById('butterCookie')
+                console.log("what")
+                img.setAttribute('src','butter.jpg')
+            }
+        }
+    </script>
+</body>
+</html>

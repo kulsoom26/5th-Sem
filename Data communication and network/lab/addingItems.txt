@@ -1,0 +1,52 @@
+function addingItems(){
+
+var div = document.getElementById("mainDivItems");
+for(var i=0;i<localStorage.length;i++)
+{
+    
+var items=localStorage.getItem(localStorage.key(i)).split("|||");
+var newItem=
+`<div class="col-lg-9 col-md-7 col-sm-12 col-12">
+<div class="row cart-item-summary-background mb-3">
+    <div class="col-lg-3 col-md-5 col-sm-6 col-6">
+        <img src=`+items[5]+` width="175" height="175" alt="">
+    </div>
+    <div class="col-lg-3 col-md-7 col-sm-6 col-6 item-details-custom">
+        <div class="item-details">
+            <span class="item-name" id=`+localStorage.key(i)+`>`+items[3]+`</span>
+            <span class="size">Size: <span>`+items[2]+`</span></span>
+            <span class="color">Color: <span>`+items[1]+`</span></span>
+            <span class="price">Price: <span>`+items[4]+`</span></span>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-5 col-sm-6 col-6 item-numbers-custom p-0">
+        <div class="items p-lg-2 pl-md-4 pl-sm-5 pl-5">
+            <button type="button" class="item-cart-add-remove-btn-custom">-</button>
+            <input type="text" class="item-cart-number" value=` +items[0]+ `>
+            <button type="button" class="item-cart-add-remove-btn-custom">+</button>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-7 col-sm-6 col-6 p-0 cartItem-actions">
+        <div class="items">
+            <ul class="cartItem-elements-actions-custom p-0">
+                <li onclick="localStorage.removeItem(`+localStorage.key(i)+`); location.reload();">
+                    <a href="#"  >
+                        <img src="icons/bin.svg" alt="Remove" width="21" height="21" class="d-inline-block align-top">
+                        <span>Remove</span>
+                    </a>
+                </li>
+              
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+`
+div.innerHTML=newItem+div.innerHTML;
+
+
+}

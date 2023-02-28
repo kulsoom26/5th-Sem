@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<script>
+ function myFunction(){
+     var x=document.getElementById("form1");
+     var name=x.elements[0].value;
+     var email=x.elements[1].value;
+
+     document.getElementById("name").innerHTML = name;
+     var radios = document.getElementsByName('Gender');
+    for (var radio of radios)
+    {
+        if (radio.checked) {
+            document.getElementById("gender").innerHTML = radio.value;
+           
+        }
+    }
+    x.onsubmit = function(e){
+e.preventDefault();
+}
+    document.getElementById("datee").innerHTML = document.getElementById("date").value;
+document.getElementById("monthh").innerHTML =document.getElementById("month").value;
+document.getElementById("yearr").innerHTML=document.getElementById("year").value;
+document.getElementById("email").innerHTML=email;
+ }
+</script>
+<body>
+    <form id="form1">
+        <label>Enter your name</label>
+        <input type="text" id="em" required>
+        <p style="display: inline-block;">My name: <span id="name"></span></p>
+        <label>Enter your email</label>
+        <input type="email" id="name1" required>
+        <p style="display: inline-block;">My email: <span id="email"></span></p>
+        <p>Gender:</p>
+          <input type="radio" id="male" name="Gender" value="Male">
+          <label for="male">male</label><br>
+          <input type="radio" id="fmale" name="Gender" value="Female">
+          <label for="fmale">Female</label><br>
+          <input type="radio" id="othr" name="Gender" value="others">
+          <label for="othr">others</label>
+        <p style="display: inline-block;">My Gender: <span id="gender"></span></p>
+
+        <p>Date</p>
+        <select id="date">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <select id="month">
+            <option value="jan">jan</option>
+            <option value="feb">feb</option>
+            <option value="march">march</option>
+            <option value="april">april</option>
+            <option value="may">may</option>
+        </select>
+        <select id="year">
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+        </select>
+        <p style="display: inline-block;">Date Month Year:<span id="datee"></span><span id="monthh">-</span><span id="yearr">-</span></p>
+
+
+    </form>
+    <button onclick="myFunction()">Try it</button>
+    
+    
+</body>

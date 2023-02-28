@@ -1,0 +1,12 @@
+php -> should know what is php
+install xamp or wamp
+composer -> from single command you can have all the dependencies.
+MVC:
+All the front end part is done in view part. All the database related work, queries we 
+will write in in model.
+All the logical part in controller: For eg, in login page all front-end is in view, 
+All the queries related to the login data is in model. Controller calls the login view
+when the user opens the login page. When login view give some data it goes in the controller
+and from there controller calls the SQL query from model and check if the data exist.
+This is the structure of MVC.
+to run laravel proj command -> PHP artisan serve

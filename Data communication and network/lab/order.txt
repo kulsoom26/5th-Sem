@@ -1,0 +1,19 @@
+function order(){
+            document.cookie = "len="+ localStorage.length+"; expires=0; path=/";
+            for(var i=0;i<localStorage.length;i++){
+                document.cookie = i.toString()+"="+localStorage.key(i)+"|||"+localStorage.getItem(localStorage.key(i));+" expires=0; path=/";
+                
+            }
+            localStorage.clear();
+            location.href='http://localhost:8000/addToCart';
+            }
+
+
+
+    Terminal Paper Pattern:
+Q1 - CLO1 (5 marks)
+Q2 - CLO 2 (Searches - 12 Marks)
+Q3 - CLO 3 (CSP - 6 Marks)
+Q4 - CLO4 (Logic - 12 Marks)
+Q5 - CLO 5 (Planning and probability - 15 Marks)
+

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cakes- The Cabrokies</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&family=Parisienne&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+		<a class="navbar-brand" href="home.html"><img src="logo2.jpg" class="img-fluid rounded-circle"></a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cakes.html">Cakes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="brownies.html">Brownies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cookies.html">Cookies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="about.html">About Us</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                 style="background-color: rgb(250, 248, 248); border: 0px; color: #4C2E1D;">
+                 <i class="fa fa-user fa-2x"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="signin.html" style="color: #4C2E1D;">Sign In</a>
+                  <a class="dropdown-item" href="signup.html" style="color: #4C2E1D;">Sign Up</a>
+                  <a class="dropdown-item" href="EditUser.html" style="color: #4C2E1D;">Edit Profile</a>
+                  <a class="dropdown-item" href="Feedback.html" style="color: #4C2E1D;">Feedback</a>
+                </div>
+            </div>
+		</div>
+        <div>
+            <a href="cart.html"><i class="fa fa-shopping-cart fa-2x"></i></a>
+        </div>
+	</nav>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="jumbotron-background">
+            <img src="jumbtron1.jpg" style="width:1230px; height: 600px;">
+        </div>
+        <div class="container text-white">
+            <h1 class="display-4" style="color: #4C2E1D;">CAKES</h1>
+            <p class="lead" style="color:  #E5CDBF;">There is no celebration withou a cake. This section range from White Cake and Fudge Cake to Honey Cakes. It also includes customers favorite Vanilla Cake, Chocolate Cake, Pound Cake, one layer cakes, and much more.</p>
+        </div>
+    </div>
+    <div class="col-12" style="background-color: white;">
+        <ul class="breadcrumb" style="background-color: #D9CDBC;">
+            <li class="breadcrumb-item"><a href="home.html" style="color: #4C2E1D;">Home</a></li>
+            <li class="breadcrumb-item"><a href="home.html" style="color: #4C2E1D;">Menu</a></li>
+            <li class="breadcrumb-item active" style="color: #a3623c;">Cakes</li>
+        </ul>
+    </div>
+    <h2 style="margin-left: 20px;">Cakes</h2>
+    <div class="row mx-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="honeycake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="honey" src="honeycake.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('honey1')" onmouseout="changeImage('honey2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Honey Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">8 layers of soft, Caramelized honey cakes sandwiched between whipped cream!</p>
+                        <p class="card-text">Rs 1,500</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="LotusCake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="lotus" src="lotuscake.png" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('lotus1')" onmouseout="changeImage('lotus2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Lotus Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">Lotus biscoff spread with cream cheese on a vanilla sponge and crushed lotus biscuits on top</p>
+                        <p class="card-text">Rs 1,899</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="FerreroCake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="ferrero" src="ferrero.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('ferrero1')" onmouseout="changeImage('ferrero2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Ferrero Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">Made from ferrero hazelnut chocolate & roasted nuts with ferrero rochers on the top!</p>
+                        <p class="card-text">Rs 1,999</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-4" style="margin-top: 15px;">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                 <a href="RedVelvetCake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="velvet" src="redvelvet.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('velvet1')" onmouseout="changeImage('velvet2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Red Velvet Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">This classic cake is unbelievably moist, fluffy, flavorful, and perfectly red. It’s the real thing!</p>
+                        <p class="card-text">Rs 1,199</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div>
+            </div></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="KitKatCake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="kitkat" src="kitkat.jfif" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('kitkat1')" onmouseout="changeImage('kitkat2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Kit Kat Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">Our best creamy milk chocolate with crunchy KitKat frosting on a velvety soft vanilla cake sponge.</p>
+                        <p class="card-text">Rs 1,599</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="CoffeeCake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="coffee" src="coffee.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('coffee1')" onmouseout="changeImage('coffee2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Coffee Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">Light crème cheese icing with a 'sweet sense of coffee'!. Coffee lovers can't resist it.</p>
+                        <p class="card-text">Rs 1,199</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-4" style="margin-top: 15px;">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="CadburryCake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="cadburry" src="cadburry.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('cadburry1')" onmouseout="changeImage('cadburry2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Cadburry Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">Nothing is more delight than a light dairy milk chocolate till the last bite!</p>
+                        <br>
+                        <p class="card-text">Rs 1,599</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="SnickersCake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="snicker" src="snicker.jpg" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('snicker1')" onmouseout="changeImage('snicker2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Snickers Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">Chocolate Fudge cake with crunchy snickers bite, topped with caramel and chocolate syrup!</p>
+                        <p class="card-text">Rs 1,799</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="container mt-3" id="container">
+                <a href="ThreeMilkCake.html">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" id="three" src="threemilk.jfif" alt="Card image" style="width:300px;height: 270px;" onmouseover="changeImage('three1')" onmouseout="changeImage('three2')">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Parisienne', cursive;">Three Milk Cake</h5>
+                        <p class="card-text" style="font-size: 15px;">2.5 LBS</p>
+                        <p class="card-text" style="font-size: 15px;">Vanilla sponge cake in three kind of milk; Whole milk, Evaporated milk and Condensed milk!</p>
+                        <p class="card-text">Rs 1,199</p>
+                        <p style="display: inline;"><a href="cart.html" class="btn btn-danger btn-block">Add to cart</a></p>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer class="py-4">
+        <div class="container">
+            <div class="row mx-4 mt-4">
+                <div class="col-md-6 col-lg-5">
+                    <h5 id="headingFooter">The Cabrokies</h5>
+                    <p>We pride ourselves in providing the customer with the best services, and for using high quality ingredients in all of our baked goods.</p>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a class="linktext" href="home.html">Home</a></li>
+                        <li><a class="linktext" href="cakes.html">Cakes</a></li>
+                        <li><a class="linktext" href="brownies.html">Brownies</a></li>
+                        <li><a class="linktext" href="cookies.html">Cookies</a></li>
+                        <li><a class="linktext" href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="fa fa-phone"></i> 0307809974</li>
+                        <li><i class="fa fa-envelope"></i>  carbokies@gmail.com</li>
+                        <li><i class="fa fa-instagram"></i>  <a class="linktext" href="https://instagram.com/thecabrokies?igshid=YmMyMTA2M2Y=">thecarbokies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function changeImage(type){
+            if (type=="honey1"){
+                var img = document.getElementById('honey')
+                img.setAttribute('src','honey.jfif')
+            }
+            if (type=="honey2"){
+                var img = document.getElementById('honey')
+                console.log("what")
+                img.setAttribute('src','honeycake.jpg')
+            }
+            if (type=="lotus1"){
+                var img = document.getElementById('lotus')
+                img.setAttribute('src','lotus.jfif')
+            }
+            if (type=="lotus2"){
+                var img = document.getElementById('lotus')
+                console.log("what")
+                img.setAttribute('src','lotuscake.png')
+            }
+            if (type=="ferrero1"){
+                var img = document.getElementById('ferrero')
+                img.setAttribute('src','ferrero.jfif')
+            }
+            if (type=="ferrero2"){
+                var img = document.getElementById('ferrero')
+                console.log("what")
+                img.setAttribute('src','ferrero.jpg')
+            }
+            if (type=="velvet1"){
+                var img = document.getElementById('velvet')
+                img.setAttribute('src','velvet.jfif')
+            }
+            if (type=="velvet2"){
+                var img = document.getElementById('velvet')
+                console.log("what")
+                img.setAttribute('src','redvelvet.jpg')
+            }
+            if (type=="kitkat1"){
+                var img = document.getElementById('kitkat')
+                img.setAttribute('src','kitkat1.jfif')
+            }
+            if (type=="kitkat2"){
+                var img = document.getElementById('kitkat')
+                console.log("what")
+                img.setAttribute('src','kitkat.jfif')
+            }
+            if (type=="coffee1"){
+                var img = document.getElementById('coffee')
+                img.setAttribute('src','coffee.jfif')
+            }
+            if (type=="coffee2"){
+                var img = document.getElementById('coffee')
+                console.log("what")
+                img.setAttribute('src','coffee.jpg')
+            }
+            if (type=="cadburry1"){
+                var img = document.getElementById('cadburry')
+                img.setAttribute('src','cadburry.jfif')
+            }
+            if (type=="cadburry2"){
+                var img = document.getElementById('cadburry')
+                console.log("what")
+                img.setAttribute('src','cadburry.jpg')
+            }
+            if (type=="snicker1"){
+                var img = document.getElementById('snicker')
+                img.setAttribute('src','snicker.jfif')
+            }
+            if (type=="snicker2"){
+                var img = document.getElementById('snicker')
+                console.log("what")
+                img.setAttribute('src','snicker.jpg')
+            }
+            if (type=="three1"){
+                var img = document.getElementById('three')
+                img.setAttribute('src','three.jfif')
+            }
+            if (type=="three2"){
+                var img = document.getElementById('three')
+                console.log("what")
+                img.setAttribute('src','threemilk.jfif')
+            }
+
+        }
+    </script>
+</body>
+</html>

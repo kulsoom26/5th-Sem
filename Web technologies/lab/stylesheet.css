@@ -1,0 +1,97 @@
+body{
+    background-color: grey;
+}
+.main{
+    background-color: rgb(48, 44, 44);
+    width: 1100px;
+    height: 520px;
+    position: absolute;
+    right: 100px;
+    left: 100px;
+    top: 40px;
+    bottom: 50px;
+}
+
+.button1{
+    background-color: rgb(45, 100, 218); 
+    width: 60px;
+    position: relative;
+    right: 110px;
+    left: 70px;
+    color: white;
+}
+.table1{
+    border-collapse: collapse;
+    padding: 5px;
+    width: 250px;
+    position: relative;
+    right: 450px;
+    left: 450px;
+    top: 15px;
+}
+.un{
+    width: 230px;
+}
+
+.pass{
+    width: 230px;
+}
+#header1{
+    background-color: grey;
+    border-spacing: 5px;
+    padding: 5px;
+}
+
+#table1{
+    background-color: white;
+    padding: 5px;
+}
+#table1H{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 5px;
+}
+
+#table2H{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 5px;
+}
+#tab1{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 5px;
+}
+#tab2{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 5px;
+    align-self: center;
+}
+.table2{
+    border-collapse: collapse;
+    padding: 5px;
+    width: 600px;
+    position: relative;
+    right: 300px;
+    left: 300px;
+    top: 25px;
+}
+#header2{
+    background-color: grey;
+    border-spacing: 5px;
+    padding: 5px;
+}
+#table2{
+    background-color: white;
+    padding: 5px;
+}
+.button2{
+    background-color: rgb(45, 100, 218); 
+    width: 60px;
+    position: relative;
+    right: 110px;
+    left: 70px;
+    color: white;
+    align-self: center;
+}

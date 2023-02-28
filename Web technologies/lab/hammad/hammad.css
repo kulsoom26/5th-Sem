@@ -1,0 +1,229 @@
+body{
+    background-image:url(back.png);
+    background-repeat: repeat;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 8%; 
+}
+.heading{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: brown;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+#heading{
+    margin-left: 40px;
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 7px;
+}
+
+.navbar{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+.navbar ul{ 
+    margin-left: -40px;  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar span{
+    color: yellow;
+}
+.navbar li{
+    background-color: brown;
+    color: white;
+    width: 154px;
+    margin: 0px;
+    list-style: none;
+    padding: 15px;
+    border-top: 2px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+}
+.li6{ 
+    width: 141px;
+}
+.navbar a{
+    font-family:sans-serif;
+    font-size: small;
+    color: inherit;
+    text-decoration: none;
+  }
+.navbar li:hover{
+    color:black;
+    cursor: pointer;
+    background-color: white;
+}
+.navbar li > span:hover{
+    color:red;
+}
+
+.flex-container1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 11.3%;
+    margin-top: 1%;
+    margin-right: 15.5%;
+    background-color: rgb(70, 69, 69);
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 800px; 
+}
+.box2{
+    display: flex;
+    height: 200px;
+    margin-bottom: 30px;
+    color: white;
+    box-shadow: 2px 0px rgb(48, 47, 47);
+}
+a{
+    text-decoration: none;
+}
+.side-box{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 450px;
+    justify-content: center;    
+    align-items: center;
+    color: white;
+    margin-left: 2px;
+    margin-right: 0px;
+}
+.side-box div{
+    width: 300px;
+}
+.image-info{
+    margin-left: 10px;
+}
+
+.watch-films{
+    background-color: maroon; 
+    height: 110px; 
+    margin-top: 10px;
+    margin-bottom: -20px;
+    
+}
+.watch-films h1{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.flex-container2{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.flex-container2 > div{
+    width: 300px;
+    margin-left: 60px;
+    margin-right: 0px;
+}
+
+.flex-container2 >div h2 {
+    color: black;
+    padding: 5px;
+    font-size: 35px;
+    padding-bottom: 0%;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.flex-container2 >div img {
+    width: 200px;
+    height:170px;
+    border: 10px solid white;
+    margin-left: 80px;
+    
+}
+
+.flex-container2 > div h6{
+    color: black;
+    padding: 5px;
+    padding-left: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-size: 12px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.flex-container2 > div p{
+    font-size: 10px;
+    color: rgb(107, 103, 103);
+    padding: 5px;
+    font-size: 12px;
+    margin-left: 80px;
+}
+
+.more{
+    font-size: 10px;
+    color: rgb(250, 9, 9);
+    margin-left: 80px;
+    color: red;
+}
+
+.a{
+    height: 200px;
+    background-color: rgb(56, 55, 55);
+    border-top: 3px solid red;
+}   
+footer{
+    border-top: 3px solid brown;
+    background-color:  rgb(46, 44, 44);
+    display: flex;
+    color: white;
+}
+.f1{
+    flex-basis:30%;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.f2{
+    flex-basis:50%;
+    display: flex;
+    flex-direction:column;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.f2 span{
+    color: rgb(246, 246, 135);
+}
+.f3{
+    flex-basis:20%;
+    margin-top: 10px;
+}
+.f3 span{
+    color: white;
+}
+.f2 ul{
+    margin-left: -30px;
+}
+.f3 ul{
+    margin-left: -30px;
+}
+.f2sub{
+    display: flex;
+    margin-top: 10px;
+}
+.f2 li{
+    display: inline;
+    list-style: none;
+}
+.f3 li{
+    display: inline;
+    list-style: none;
+}

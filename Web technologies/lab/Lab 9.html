@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Javascript</h1>
+    <br/>
+    <h3>Question 1: part a Same text in textarea</h3>
+    <textarea id="text1" onkeyup="tDisplayText()" placeholder="enter text"></textarea>
+    <textarea id="text2" placeholder="copy pasted text"></textarea>
+    <br/>
+
+    <h3>Question 1: part b Displaying text in a heading</h3>
+    <h4 id="text"></h4>
+    <button onclick="hDisplayText()" style="height: 40px; width: 100px; background-color: cadetblue; color: aliceblue;">Add text</button>
+    <br/>
+
+    <h3>Question 1: part c Displaying hello in alert</h3>
+    Enter Name: <input type="text" id="myText">
+    <br/>
+    <br/>
+    <button onclick="helloName()" style="height: 40px; width: 100px; background-color: cadetblue; color: aliceblue;">Try it</button>
+    <br/>
+
+    <h3>Question 1: part d Create table:</h3>
+    <style>
+	table, td {
+        border: 1px solid black;
+    }
+    </style>
+    <table id="myTable1"></table>
+    <br>
+    <button onclick="createTable()" style="height: 40px; width: 100px; background-color: cadetblue; color: aliceblue;">Create table</button>
+    <br/>
+
+    <h3>Question 1: part e Count list items</h3>
+    <select id="mySelect">
+        <option id="1">Kulsoom</option>
+        <option id="2">Sabah</option>
+        <option id="3">Aliza</option>
+        <option id="4">Aaiza</option>
+        <option id="5">Laraib</option>
+        <option id="6">Malaika</option>
+        <option id="7">Ayesha</option>
+        <option id="8">Kausar</option>
+        <option id="9">Labeeka</option>
+        <option id="10">Ishma</option>
+        <option id="11">Noor</option>
+        <option id="12">Esha</option>
+        <option id="13">Eman</option>
+        <option id="14">Adn</option>
+        <option id="15">Haadiyah</option>
+        <option id="16">Fatima</option>
+        <option id="17">Dua</option>
+        <option id="18">Amna</option>
+    </select>
+      
+    <button onclick="getOptions()"style="height: 40px; width: 140px; background-color: cadetblue; color: aliceblue;">Get the count</button>
+    <br/>
+    <p id="demo"></p>
+    <br/>
+
+<script>
+function tDisplayText() {
+    var x = document.getElementById("text1").value;
+    document.getElementById("text2").innerHTML = x;
+}
+
+function hDisplayText() {
+    var x = prompt("Enter text");
+    if(x != null){
+        document.getElementById("text").innerHTML = x;
+        innerHTML = " " + x
+    }
+}
+
+function helloName() {
+    var x = document.getElementById("myText").value;
+    alert("hello "+x);
+    submitOK = "false";
+}
+
+function createTable(){
+    let row=prompt("Enter the no of rows: ");
+    let col=prompt("Enter the no of columns: ");
+
+    var table = document.getElementById("myTable1");
+ 
+    for (let i = 0; i < row; i++){
+        var row1 = table.insertRow(i);
+        for (let j = 0; j < col; j++){
+            var cell1 = row1.insertCell(j);
+            cell1.innerHTML = "kulsoom"+ (i+(j+1));
+        }
+    }
+}
+
+function getOptions(){
+    var x = document.getElementById("mySelect").length;
+    document.getElementById("demo").innerHTML = x;
+    var opt;
+    for(var i = 1; i <= x; i++){
+        opt = document.getElementById(""+i+"").value;
+        document.getElementById("demo").innerHTML = opt;
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    table{
+        text-align: center;
+        width: 35%;
+        border-collapse: collapse;
+    }
+    th
+    {
+        text-align: center;
+        background-color: purple;
+        color: white; 
+        height: 50px;
+        font-size: 24px ;
+        padding:18px;
+    }
+    td{
+       background-color:white;
+       padding: 10px;
+    } 
+    span{
+        font-size: large;
+        color: white;
+        padding: 10px;
+        background-color: purple;
+    }
+    input{
+        background-color: rgb(218, 214, 214);
+        padding: 10px;
+
+    }
+    
+</style>
+<body style="background-color:rgb(13, 122, 122); margin-top: 2%;">
+    <table align="center">
+        <tr><th>
+             <span style="color: white;" class="fa fa-pencil-square-o"><br>REGISTER</span>
+         </th></tr> 
+         <tr>
+             <td>
+                <span class="fa fa-user"></span> <input type="text" name="name" placeholder="Username" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+             <span class="fa fa-unlock-alt"></span>
+             <input type="password" placeholder="Password">
+            </td>
+        </tr>
+         <tr>
+             <td>
+             <span class="fa fa-unlock-alt"></span>
+             <input type="password" placeholder="Confirm password" />
+            </td>
+        </tr>
+         <tr>
+             <td>
+             <span class="fa fa-envelope"></span>
+             <input type="email" name="email" placeholder="Email" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="checkbox">
+            I agree to the <strong>Terms of Services</strong> 
+        </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <input type="button" style="background-color: yellow; width: 300px;" value="SIGN UP">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Already a member? <a href="#"><strong>Login</strong></a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
